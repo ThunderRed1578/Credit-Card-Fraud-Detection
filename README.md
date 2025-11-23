@@ -1,8 +1,8 @@
-<div style="text-align: center;"> 
+<h1 style="text-align: center;"> 
     <span style="font-size: 40px; font-weight: bold">
         Credit Card Fraud Detection using NumPy
     </span>
-</div>
+</h1>
 
 > **Học phần:** Lập trình cho Khoa học dữ liệu - CQ2023/21  
 > **Sinh viên:** Nguyễn Lê Tấn Phát - 22120262  
