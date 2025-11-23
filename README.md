@@ -133,7 +133,7 @@ Việc phát hiện sớm gian lận giúp giảm thiểu tổn thất tài chí
 
     - Công thức sinh điểm mới:
       
-    $$
+  $$
   x_{new} = x_i + \lambda \times (x_{zi} - x_i)
   $$
 
