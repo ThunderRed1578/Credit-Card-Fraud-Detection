@@ -133,9 +133,9 @@ Việc phát hiện sớm gian lận giúp giảm thiểu tổn thất tài chí
 
     - Công thức sinh điểm mới:
       
-  $$
-  x_{new} = x_i + \lambda \times (x_{zi} - x_i)
-  $$
+$$
+x_{new} = x_i + \lambda \times (x_{zi} - x_i)
+$$
 
     Trong đó $x_i$ là điểm dữ liệu gốc, $x_{zi}$ là một láng giềng ngẫu nhiên, và $\lambda \in [0, 1]$.
 
