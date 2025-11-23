@@ -119,9 +119,9 @@ Việc phát hiện sớm gian lận giúp giảm thiểu tổn thất tài chí
 
 - **Robust Scaling:** Áp dụng cho `Time` và `Amount` để giảm ảnh hưởng của outliers.
 
-    $$
-    X_{scaled} = \frac{X - Q_2(X)}{Q_3(X) - Q_1(X)}
-    $$
+$$
+X_{scaled} = \frac{X - Q_2(X)}{Q_3(X) - Q_1(X)}
+$$
 
 - **Outlier Removal:** Sử dụng phương pháp IQR (Interquartile Range) để loại bỏ các điểm nhiễu trong tập huấn luyện.
 
@@ -137,7 +137,7 @@ $$
 x_{new} = x_i + \lambda \times (x_{zi} - x_i)
 $$
 
-    Trong đó $x_i$ là điểm dữ liệu gốc, $x_{zi}$ là một láng giềng ngẫu nhiên, và $\lambda \in [0, 1]$.
+Trong đó $x_i$ là điểm dữ liệu gốc, $x_{zi}$ là một láng giềng ngẫu nhiên, và $\lambda \in [0, 1]$.
 
 <h3 id="iii_3" style="font-weight: bold">3. Thuật toán Logistic Regression</h3>
 
@@ -145,21 +145,21 @@ Mô hình phân loại nhị phân sử dụng hàm kích hoạt Sigmoid và t�
 
 - **Hypothesis:**
 
-    $$
-    \hat{y} = \sigma(w^T x + b) = \frac{1}{1 + e^{-(w^T x + b)}}
-    $$
+$$
+\hat{y} = \sigma(w^T x + b) = \frac{1}{1 + e^{-(w^T x + b)}}
+$$
 
 - **Cost Function (Log Loss):**
 
-    $$
-    J(w, b) = -\frac{1}{m} \sum_{i=1}^{m} [y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)})]
-    $$
+$$
+J(w, b) = -\frac{1}{m} \sum_{i=1}^{m} [y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)})]
+$$
 
 - **Gradient Descent Update:**
 
-    $$
-    w := w - \alpha \frac{1}{m} X^T (\hat{y} - y)
-    $$
+$$
+w := w - \alpha \frac{1}{m} X^T (\hat{y} - y)
+$$
 
 ---
 
