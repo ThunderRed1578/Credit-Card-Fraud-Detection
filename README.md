@@ -132,7 +132,6 @@ Việc phát hiện sớm gian lận giúp giảm thiểu tổn thất tài chí
 - **SMOTE (Synthetic Minority Over-sampling Technique):** Sinh thêm dữ liệu giả cho lớp Fraud dựa trên K-Nearest Neighbors.
 
     - Công thức sinh điểm mới:
-
     $$
     x_{new} = x_i + \lambda \times (x_{zi} - x_i)
     $$
